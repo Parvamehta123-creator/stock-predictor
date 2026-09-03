@@ -48,7 +48,7 @@ def align_to_trading_days(dates: pd.Series, trading_days: pd.Series) -> pd.Serie
     positions = np.searchsorted(sorted_days, dates.values.astype("datetime64[ns]"))
     in_range = positions < len(sorted_days)
     safe_positions = np.clip(positions, 0, len(sorted_days) - 1)
-    aligned = np.where(in_range, sorted_days[safe_positions], np.datetime64("NaT"))
+    aligned = np.where(in_range, sorted_days[safe_positions], np.datetime64("NaT", "ns"))
     return pd.Series(aligned, index=dates.index)
 
 
