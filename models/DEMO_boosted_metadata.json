@@ -1,0 +1,86 @@
+{
+  "ticker": "DEMO",
+  "model_name": "boosted",
+  "feature_columns": [
+    "return_1d",
+    "return_lag_1",
+    "return_lag_2",
+    "return_lag_3",
+    "return_lag_5",
+    "price_vs_sma10",
+    "price_vs_sma50",
+    "macd",
+    "macd_signal",
+    "rsi_14",
+    "bb_position",
+    "volume_ratio",
+    "day_of_week",
+    "month"
+  ],
+  "trained_at": "2026-09-03T02:04:59.928511+00:00",
+  "training_rows": 950,
+  "walk_forward_mean_accuracy": 0.5088607594936708,
+  "walk_forward_mean_majority_baseline": 0.5240506329113923,
+  "walk_forward_folds": [
+    {
+      "accuracy": 0.5316455696202531,
+      "precision": 0.5555555555555556,
+      "recall": 0.4878048780487805,
+      "f1": 0.5194805194805194,
+      "majority_baseline": 0.5189873417721519,
+      "fold": 1,
+      "train_size": 160,
+      "test_size": 158,
+      "test_start": "2023-08-23",
+      "test_end": "2024-03-29"
+    },
+    {
+      "accuracy": 0.4873417721518987,
+      "precision": 0.5053763440860215,
+      "recall": 0.573170731707317,
+      "f1": 0.5371428571428571,
+      "majority_baseline": 0.5189873417721519,
+      "fold": 2,
+      "train_size": 318,
+      "test_size": 158,
+      "test_start": "2024-04-01",
+      "test_end": "2024-11-06"
+    },
+    {
+      "accuracy": 0.4873417721518987,
+      "precision": 0.4642857142857143,
+      "recall": 0.52,
+      "f1": 0.49056603773584906,
+      "majority_baseline": 0.5253164556962026,
+      "fold": 3,
+      "train_size": 476,
+      "test_size": 158,
+      "test_start": "2024-11-07",
+      "test_end": "2025-06-16"
+    },
+    {
+      "accuracy": 0.5506329113924051,
+      "precision": 0.5555555555555556,
+      "recall": 0.5625,
+      "f1": 0.5590062111801242,
+      "majority_baseline": 0.5063291139240507,
+      "fold": 4,
+      "train_size": 634,
+      "test_size": 158,
+      "test_start": "2025-06-17",
+      "test_end": "2026-01-22"
+    },
+    {
+      "accuracy": 0.4873417721518987,
+      "precision": 0.5319148936170213,
+      "recall": 0.5747126436781609,
+      "f1": 0.5524861878453039,
+      "majority_baseline": 0.5506329113924051,
+      "fold": 5,
+      "train_size": 792,
+      "test_size": 158,
+      "test_start": "2026-01-23",
+      "test_end": "2026-09-01"
+    }
+  ]
+}
