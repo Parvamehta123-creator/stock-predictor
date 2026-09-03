@@ -6,6 +6,9 @@ numpy>=1.26
 # Sentiment / notes pipeline
 python-docx>=1.1
 
+# Model persistence
+joblib>=1.3
+
 # Optional upgrade path for sentiment.py: replace the lexicon scorer with a
 # real financial sentiment model once you want it. Not required to run
 # anything in this repo as-is.
@@ -20,6 +23,7 @@ xgboost>=2.0
 fastapi>=0.110
 uvicorn[standard]>=0.29
 pydantic>=2.0
+httpx>=0.27
 
 # Frontend
 streamlit>=1.35
