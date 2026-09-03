@@ -1,0 +1,30 @@
+# Data & fetching
+yfinance>=0.2.40
+pandas>=2.0
+numpy>=1.26
+
+# Sentiment / notes pipeline
+python-docx>=1.1
+
+# Optional upgrade path for sentiment.py: replace the lexicon scorer with a
+# real financial sentiment model once you want it. Not required to run
+# anything in this repo as-is.
+# transformers>=4.40
+# torch>=2.2
+
+# Modeling
+scikit-learn>=1.4
+xgboost>=2.0
+
+# Backend
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.0
+
+# Frontend
+streamlit>=1.35
+plotly>=5.20
+
+# Tooling
+pytest>=8.0
+python-dotenv>=1.0
